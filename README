@@ -1,0 +1,8 @@
+Wiki Made Easy makes Wikipedia fun by grabbing random articles and trying to
+pique your interest with just the first sentence. It presents a link that
+provides more information on the article, and a link that you can use to grab
+a different random article. It's written in Go App Engine and uses the URLFetch
+library to grab Wikipedia articles and the regexp library to filter out various
+parts of the HTML that comes back.
+
+Comments welcome - enjoy!
