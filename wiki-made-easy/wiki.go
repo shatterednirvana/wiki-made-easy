@@ -29,9 +29,8 @@ func root(w http.ResponseWriter, r *http.Request) {
 	firstLine := getFirstLine(string(allData))
 	url := getUrl(string(allData))
 
-	// TODO - check if firstLine is empty, and if so, log it
 	if firstLine == "" {
-		c.Errorf("Saw empty first line for data: %s", allData)
+		c.Errorf("Saw empty first line for url: %s", url)
 	}
 
 	data := map[string] string {
